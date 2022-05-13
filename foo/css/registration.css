@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url('../images/background.jpg') repeat;
+}
+
+
+/*Body*/
+
+.form {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 50px 20px 40px 23px;
+    float: left;
+    border: none;
+    margin: 0 0 0 35%;
+    margin-top: 6%;
+}
+
+.form-div-box {
+    width: 220px;
+    margin: 0px auto;
+    position: relative;
+    border-radius: 30px;
+}
+
+.from-div {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    display: flex;
+    background: #F3C693;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 30px;
+    transition: .5s;
+    padding-bottom: 10px;
+}
+
+.form-sign-in {
+    display: none;
+    align-items: center;
+    padding-top: 30px;
+    margin-left: 20px;
+}
+
+.form-sign-up {
+    display: block;
+    align-items: center;
+    padding-top: 30px;
+    margin-left: 20px;
+}
+
+.form-input {
+    width: 90%;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+    border: 1px #2a2a2a solid;
+    background: rgba(42, 42, 42, 0.1);
+}
+
+.form-input-sign-in {
+    width: 90%;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+    border: 1px #2a2a2a solid;
+    background: rgba(42, 42, 42, 0.1);
+}
+
+.form-a {
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 60px;
+    color: rgb(42, 42, 42);
+    position: relative;
+}
+
+.form-a:hover {
+    color: rgb(107, 106, 106);
+    transition: 0.6s;
+}
+
+.form-a::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #2a2a2a;
+    position: absolute;
+    top: 120%;
+    opacity: 0;
+    left: 0;
+    z-index: 1;
+    transition: opacity 0.5s linear;
+}
+
+.form-a:hover::after {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.form-label {
+    color: #2a2a2a;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-left: 3px;
+}
+
+.form-button {
+    width: 150px;
+    border-radius: 20px;
+    height: 30px;
+    margin-left: 28%;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.form-sign-in-button {
+    width: 150px;
+    display: none;
+    border-radius: 20px;
+    height: 30px;
+    margin-left: 28%;
+    margin-top: 20px;
+}
+
+.form-input.error {
+    box-shadow: 0 0 15px #ff0000;
+}
+
+
+/* Окно сообщения отображается, когда пользователь нажимает на поле пароля */
+
+#message {
+    display: none;
+    background: whitesmoke;
+    color: #000;
+    position: relative;
+    width: 450px;
+    border-radius: 20px;
+    padding: 20px;
+    float: right;
+    margin-top: 15%;
+    margin-right: 80px;
+}
+
+#message p {
+    padding: 10px 35px;
+    font-size: 16px;
+}
+
+
+/* Добавить зеленый цвет текста и галочка, когда требования верны */
+
+.valid {
+    color: green;
+}
+
+
+/* Добавить красный цвет текста и собой "x" и значок, когда требования не правы */
+
+.invalid {
+    color: red;
+}

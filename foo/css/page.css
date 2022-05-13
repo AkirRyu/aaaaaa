@@ -1,0 +1,133 @@
+.navbar-brand {
+    margin-left: 100px;
+    font-size: 2rem;
+}
+
+nav {
+    position: fixed;
+}
+
+.body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#intro {
+    width: 100%;
+    height: 100vh;
+    background: #2a2a2a center no-repeat;
+    background-size: cover;
+}
+
+.intro_title {
+    font-size: 85px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    letter-spacing: 25px;
+    padding-top: 200px;
+}
+
+.intro_subtitle {
+    text-align: center;
+    color: white;
+}
+
+.intro_hr {
+    height: 7px;
+    width: 100px;
+    background-color: white;
+    margin: 10px auto;
+    opacity: 1;
+}
+
+
+/*Section*/
+
+#section_location {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    background: #181818 center no-repeat;
+    background-size: cover;
+}
+
+.min_section {
+    float: left;
+}
+
+.section_title {
+    width: 400px;
+    height: 270px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5%;
+    margin: 50px;
+}
+
+.section_subtitle {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+}
+
+.section_text {
+    font-size: 15px;
+    margin-left: 15px;
+    color: white;
+}
+
+.section_title_2 {
+    width: 400px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5%;
+}
+
+
+/*Section dress code*/
+
+#section_dress {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    background: url('./img/wallpaperbetter.com_1920x1080.jpg')center no-repeat;
+    background-size: cover;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 50px;
+    grid-gap: 300px;
+    grid-auto-rows: minmax(250px, auto);
+}
+
+.glass_1 {
+    margin-top: 300px;
+    width: 250px;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 1%;
+}
+
+.glass_2 {
+    width: 250px;
+    margin-top: 300px;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.glass_title {
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 360px;
+    color: white;
+}

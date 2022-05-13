@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../images/cc741d53-2cc6-4f75-9eb7-a492b16bba57\ —\ копия.jpg')
+}
+
+.table {
+    width: 100%;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+th {
+    padding: 20px 70px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+td {
+    padding: 10px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.tbody {
+    padding: 10px;
+    border-right: 1px solid black;
+}
+
+.popup {
+    width: 400px;
+    background-color: #2a2a2a;
+    padding: 50px 20px 40px 20px;
+    z-index: 3;
+    left: 35%;
+    top: 15%;
+    display: none;
+    position: fixed;
+}
+
+.popup-form.active {
+    display: block;
+}
+
+.editbutton {
+    cursor: pointer;
+}
+
+.message {
+    background-color: white;
+    margin: 0 auto;
+    width: 80%;
+    min-height: 30px;
+}
+
+.close {
+    width: 150px;
+    border-radius: 20px;
+    height: 30px;
+    background-color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    padding-top: 3px;
+    display: block;
+    color: #2a2a2a;
+    margin: 0 auto;
+    margin-top: 20px;
+}
