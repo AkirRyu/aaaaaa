@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap');
+* {
+    margin: 0 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./images/background.jpg);
+}
+
+.hidden-email {
+    font-size: 1;
+    color: white;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    height: 200vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1.5fr 0.4fr 1.2fr 1.2fr 0.4fr 1.2fr 0.4fr 1.5fr 0.8fr;
+    grid-template-areas: "nav nav nav nav" "main main main main" "heading1 heading1 heading1 heading1" "content1 content2 content3 content3" "banner banner banner banner" "heading2 heading2 heading2 heading2" "content4 content5 content6 content6" "heading3 heading3 heading3 heading3" "contact contact contact contact" "footer footer footer footer";
+    grid-gap: 2rem;
+    grid-row-gap: 8rem;
+    grid-column-gap: 0.8rem;
+}
+
+nav {
+    margin-left: -30px;
+    margin-right: -30px;
+    background: #ffffff;
+    grid-area: nav;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+li,
+a,
+button {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+}
+
+main {
+    grid-area: main;
+    height: 70vh;
+    background: black;
+    border-radius: 20px;
+}
+
+main h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 200px;
+}
+
+main p {
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    top: 220px;
+}
+
+.white-logo {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 180px;
+}
+
+#heading1 {
+    grid-area: heading1;
+    height: 5vh;
+}
+
+#heading1 h1 {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.line {
+    border-bottom: 4px solid rgb(255, 96, 0);
+    margin: auto;
+    width: 300px;
+}
+
+#content1 {
+    grid-area: content1;
+    height: 60vh;
+    background-color: rgba(245, 245, 245, 1.0);
+}
+
+#content1:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#content1:hover button {
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+}
+
+#content1:hover h4 {
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+#content1:hover p {
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+#content1:hover h3 {
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+#content1 button {
+    position: relative;
+    left: 150px;
+    bottom: 57px;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+#content2 {
+    grid-area: content2;
+    height: 60vh;
+    background-color: rgba(245, 245, 245, 1.0);
+}
+
+#content2:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#content2:hover button {
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+}
+
+#content2:hover h4 {
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+#content2:hover p {
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+#content2:hover h3 {
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+#content2 button {
+    position: relative;
+    left: 150px;
+    bottom: 57px;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+#content3 {
+    grid-area: content3;
+    height: 60vh;
+    background-color: rgba(245, 245, 245, 1.0);
+}
+
+#content3:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#content3:hover button {
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+}
+
+#content3:hover h4 {
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+#content3:hover p {
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+#content3:hover h3 {
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+#content3 button {
+    position: relative;
+    left: 150px;
+    bottom: 57px;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+#banner {
+    background: #E6E7E3;
+    grid-area: banner;
+    height: 60vh;
+    border-radius: 30px;
+}
+
+#heading2 {
+    grid-area: heading2;
+    height: 5vh;
+}
+
+#heading2 h1 {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+#content4 {
+    grid-area: content4;
+    height: 60vh;
+    background-color: rgb(235, 235, 235);
+}
+
+#content5 {
+    grid-area: content5;
+    height: 60vh;
+    background-color: rgb(235, 235, 235);
+}
+
+#content6 {
+    grid-area: content6;
+    height: 60vh;
+    background-color: rgb(235, 235, 235);
+}
+
+#heading3 {
+    grid-area: heading3;
+    height: 5vh;
+}
+
+#heading3 h1 {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+#contact {
+    grid-area: contact;
+    height: 70vh;
+    background-color: rgb(235, 235, 235);
+}
+
+footer {
+    margin-left: -30px;
+    margin-right: -30px;
+    grid-area: footer;
+    height: 30vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.logo {
+    margin-top: 8px;
+    cursor: pointer;
+    position: relative;
+    right: 100px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: rgb(255, 96, 0);
+}
+
+button {
+    padding: 5px 20px;
+    background-color: rgba(255, 96, 0, 1.0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(255, 96, 0, 0.6);
+}
+
+.main-logo {
+    width: 100%;
+    height: 100%;
+}
+
+.content123-name {
+    font-family: "Roboto", sans-serif;
+}
+
+.content1-img {
+    margin: 0;
+}
+
+.content2-img {
+    margin: 0;
+}
+
+.content3-img {
+    margin: 0;
+}
+
+.content4-img {
+    margin: 0;
+}
+
+.content5-img {
+    margin: 0;
+}
+
+.content6-img {
+    margin: 0;
+}
+
+.content1-price {
+    position: relative;
+    bottom: 30px;
+    font-family: "Roboto", sans-serif;
+    opacity: 1;
+}
+
+.content2-price {
+    position: relative;
+    bottom: 30px;
+    font-family: "Roboto", sans-serif;
+    opacity: 1;
+}
+
+.content3-price {
+    position: relative;
+    bottom: 30px;
+    font-family: "Roboto", sans-serif;
+    opacity: 1;
+}
+
+#content1 h4 {
+    font-family: "Roboto", sans-serif;
+    opacity: 1;
+}
+
+#content2 h4 {
+    font-family: "Roboto", sans-serif;
+    opacity: 1;
+}
+
+#content3 h4 {
+    font-family: "Roboto", sans-serif;
+    opacity: 1;
+}
+
+#content4 h4 {
+    font-family: "Roboto", sans-serif;
+}
+
+#content5 h4 {
+    font-family: "Roboto", sans-serif;
+}
+
+#content6 h4 {
+    font-family: "Roboto", sans-serif;
+}
+
+#content1 p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    opacity: 1;
+}
+
+#content2 p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    opacity: 1;
+}
+
+#content3 p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    opacity: 1;
+}
+
+#content4 p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+#content5 p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+#content6 p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.orange-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 10px;
+}
+
+#banner h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 70px;
+    font-weight: 300;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+    position: relative;
+    bottom: 30px;
+}
+
+#banner p {
+    font-family: "Roboto", sans-serif;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+}
+
+#contact {
+    font-family: "Roboto", sans-serif;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#contact i {
+    width: 70px;
+    height: 70px;
+    font-size: 200px;
+    color: rgb(255, 96, 0);
+}
+
+.contact1,
+.contact2,
+.contact3 {
+    display: inline-block;
+    vertical-align: top;
+    margin: 60px 70px;
+}
+
+.footer {
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    widows: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-left {
+    width: 30%;
+}
+
+.footer h3 {
+    color: #ffffff;
+    font-size: 36px;
+    margin: 0;
+}
+
+.footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-copyright {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+    margin: 0;
+}
+
+.footer-center {
+    width: 35%;
+}
+
+.footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-right {
+    width: 30%;
+}
+
+.footer-company-about {
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-company-about span {
+    display: block;
+    color: #92999f;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-icons {
+    margin-top: 25px;
+}
+
+.footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #2d2a30;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer a:hover {
+    color: rgb(255, 96, 0);
+}
+
+@media (max-width: 576px) {
+    .footer-links,
+    .footer-center,
+    .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-center i {
+        margin-left: 0;
+    }
+    footer {
+        height: 80vh;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr 0.2fr 0.7fr 0.9fr 0.2fr 0.7fr 0.2fr 1fr 0.4fr;
+        grid-template-areas:
+        "nav"
+        "main"
+        "heading1"
+        "content1"
+        "content2"
+        "content3"
+        "banner"
+        "heading2"
+        "content4"
+        "content5"
+        "content6"
+        "heading3"
+        "contact"
+        "footer";
+    }
+    .content1-img, .content2-img, .content3-img, .content4-img, .content5-img, .content6-img {
+        max-width: 30%;
+        max-height: 50%;
+    }
+    .content1, .content2, .content3, .content4, .content4, .content5, .content6 {
+        height: 10vh;
+    }
+}
